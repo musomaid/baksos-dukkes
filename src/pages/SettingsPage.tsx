@@ -1,0 +1,1 @@
+export const SettingsPage=()=> <div className='space-y-3'><div className='card'>Kegiatan Aktif: Baksos Dukkes 2026</div><div className='card'>Tim: Admin, Dokter, Perawat, Farmasi, Relawan</div><button className='btn w-full bg-slate-900 text-white'>Backup Data Kegiatan</button></div>;

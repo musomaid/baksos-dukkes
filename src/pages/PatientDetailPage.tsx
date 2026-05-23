@@ -1,0 +1,1 @@
+import { StatusBadge } from '../components/ui';export const PatientDetailPage=()=> <div className='space-y-3'><div className='card'><p className='font-semibold'>Ahmad Fauzi</p><p className='text-sm'>Keluhan: Demam</p><StatusBadge status='Menunggu'/></div></div>;

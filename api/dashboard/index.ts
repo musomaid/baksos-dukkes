@@ -1,0 +1,1 @@
+import { ok } from '../_utils'; export async function GET(){return ok({totalPatientsToday:42,waiting:8,completed:20,criticalStock:2,referrals:3,activeLocation:'Lapangan Dukkes',activeDate:'2026-05-23'});} 

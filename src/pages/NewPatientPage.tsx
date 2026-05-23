@@ -1,0 +1,2 @@
+import { FormInput,FormSelect } from '../components/forms';
+export const NewPatientPage=()=> <form className='space-y-3'><FormInput label='Nama' placeholder='Nama pasien'/><FormInput label='NIK (opsional)'/><FormInput label='Umur' type='number'/><FormSelect label='Jenis Kelamin' options={['Laki-laki','Perempuan']}/><FormInput label='No HP'/><FormInput label='Keluhan Utama'/><button className='btn w-full bg-blue-600 text-white'>Simpan & Lanjut ke Triage</button></form>;
