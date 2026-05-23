@@ -1,0 +1,4 @@
+"use client";
+import { useState } from 'react';
+export default function PatientForm(){const [m,setM]=useState('');async function onSubmit(e:any){e.preventDefault();const fd=new FormData(e.currentTarget);const r=await fetch('/api/patients',{method:'POST',body:JSON.stringify(Object.fromEntries(fd)),headers:{'Content-Type':'application/json'}});setM(r.ok?'Tersimpan':'Gagal');}
+return <form onSubmit={onSubmit} className='card space-y-2'><input name='name' placeholder='Nama' className='w-full border rounded p-2' required/><input name='age' type='number' placeholder='Usia' className='w-full border rounded p-2' required/><select name='gender' className='w-full border rounded p-2'><option>Laki-laki</option><option>Perempuan</option></select><button className='btn bg-blue-600 text-white w-full'>Simpan</button><p>{m}</p></form>}

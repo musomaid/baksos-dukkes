@@ -1,0 +1,3 @@
+create table if not exists patients (id uuid primary key default gen_random_uuid(), name varchar(120) not null, age integer not null, gender varchar(20) not null, created_at timestamp default now() not null);
+create table if not exists visits (id uuid primary key default gen_random_uuid(), patient_id uuid not null, status varchar(40) not null, queue_number varchar(12) not null, created_at timestamp default now() not null);
+create table if not exists documents (id uuid primary key default gen_random_uuid(), file_name varchar(255) not null, file_url text not null, file_type varchar(100) not null, file_size integer not null, patient_id uuid, visit_id uuid, activity_id uuid, uploaded_by uuid, created_at timestamp default now() not null);
