@@ -1,0 +1,2 @@
+export const FormInput=(p:React.InputHTMLAttributes<HTMLInputElement>&{label:string})=><label className='block space-y-1'><span className='text-sm'>{p.label}</span><input {...p} className='w-full rounded-xl border p-3'/></label>;
+export const FormSelect=(p:React.SelectHTMLAttributes<HTMLSelectElement>&{label:string;options:string[]})=><label className='block space-y-1'><span className='text-sm'>{p.label}</span><select {...p} className='w-full rounded-xl border p-3'>{p.options.map(o=><option key={o}>{o}</option>)}</select></label>;

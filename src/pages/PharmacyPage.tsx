@@ -1,0 +1,1 @@
+import { MedicineStockCard } from '../components/ui';export const PharmacyPage=()=> <div className='space-y-3'>{[['Paracetamol',40,20],['Amoxicillin',10,15]].map(m=><MedicineStockCard key={m[0] as string} name={m[0] as string} stock={m[1] as number} critical={m[2] as number}/>)}</div>;
