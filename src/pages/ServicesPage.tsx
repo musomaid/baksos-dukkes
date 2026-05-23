@@ -1,0 +1,1 @@
+import { QueueCard } from '../components/ui';export const ServicesPage=()=> <div className='space-y-3'>{[['A001','Menunggu','Normal','Ahmad'],['A002','Triage','Lansia','Siti'],['A003','Pemeriksaan','Darurat','Budi']].map(v=><QueueCard key={v[0]} no={v[0]} status={v[1]} priority={v[2]} name={v[3]}/>)}</div>;

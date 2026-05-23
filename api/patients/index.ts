@@ -1,0 +1,1 @@
+import { ok,patientSchema,bad } from '../_utils';export async function GET(){return ok([]);} export async function POST(req:Request){const parsed=patientSchema.safeParse(await req.json()); if(!parsed.success) return bad(parsed.error.message); return ok(parsed.data);} 
